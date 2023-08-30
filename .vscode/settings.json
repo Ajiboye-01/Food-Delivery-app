@@ -1,0 +1,4 @@
+{
+    "files.autoSave": "onFocusChange",
+    "java.compile.nullAnalysis.mode": "automatic"
+}
