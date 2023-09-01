@@ -2,7 +2,6 @@ package com.Olajuwon.Vendor.Model;
 
 import java.util.ArrayList;
 
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -19,11 +18,14 @@ import lombok.NoArgsConstructor;
 @Builder
 public class Vendor {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
+
     private String brandName;
     private String email;
     private int phoneNo;
+    private double balance;
     private Address address;
+    private int rating;
     private ArrayList<String> menus;
 }
