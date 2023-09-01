@@ -1,8 +1,13 @@
 package com.Olajuwon.Vendor.Service;
 
+import java.util.List;
+
 import com.Olajuwon.Vendor.Model.Vendor;
 
 public interface VendorService {
+    
     Vendor createVendor(Vendor vendor);
-    void createMenu();
+
+    List<Vendor> getAllVendors();
+    
 }
