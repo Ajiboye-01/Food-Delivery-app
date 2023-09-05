@@ -8,5 +8,5 @@ public interface MenuService {
     Menu createMenu(Menu menu);
     List<Menu> getAllMenu();
     Menu updateMenu(Menu menu);
-    Menu deleteMenu(Menu menu);
+    void deleteMenu(Menu menu);
 }
