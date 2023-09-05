@@ -18,6 +18,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Vendor {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long vendorId;
@@ -26,6 +27,7 @@ public class Vendor {
     private String email;
     private int phoneNo;
     private double balance;
+    private String password;
 
     @Embedded
     private Address address;
